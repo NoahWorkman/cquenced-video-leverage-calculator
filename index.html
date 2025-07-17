@@ -561,8 +561,8 @@
                     Instead of creating <span id="avoided-count">9</span> new videos from scratch, you can generate variations from existing approved content.
                 </div>
                 <div class="calculation-breakdown">
-                    <div class="calc-line">Every 3 variations = 1 new production avoided</div>
-                    <div class="calc-line"><span id="variations-count">28</span> variations ÷ 3 = <span id="productions-calc">9</span> productions avoided</div>
+                    <div class="calc-line">Every 8 variations = 1 new production avoided</div>
+                    <div class="calc-line"><span id="variations-count">28</span> variations ÷ 8 = <span id="productions-calc">9</span> productions avoided</div>
                     <div class="calc-line"><span id="productions-calc2">9</span> × <span id="prod-hours">80</span> hours = <span id="prod-total-hours">720</span> hours saved</div>
                 </div>
             </div>
@@ -653,7 +653,7 @@
             // Core calculations
             const totalMinutes = videoCount * videoLength;
             const possibleVariations = Math.floor(totalMinutes * 0.8);
-            const productionsAvoided = Math.floor(possibleVariations / 3);
+            const productionsAvoided = Math.floor(possibleVariations / 8);
             
             // Hours saved calculations
             const newProductionHoursSaved = productionsAvoided * newProductionHours;
